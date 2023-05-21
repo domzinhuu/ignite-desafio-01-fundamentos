@@ -6,14 +6,14 @@
 .createTask input[type="text"] {
   width: 100%;
   background: var(--gray-500);
-  color: var(--gray-300);
+  color: var(--gray-100);
   border: 1px solid var(--gray-700);
   border-radius: 8px;
   padding: 1rem;
 }
-
-.createTask input[type="text"]:focus-within {
-  color: var(--gray-100);
+.createTask input[type="text"]::placeholder,
+.createTask input[type="text"]::-webkit-input-placeholder {
+  color: var(--gray-300);
 }
 
 .createTask button[type="submit"] {
