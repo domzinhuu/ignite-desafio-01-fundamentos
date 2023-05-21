@@ -1,0 +1,37 @@
+.createTask {
+  display: flex;
+  gap: 8px;
+}
+
+.createTask input[type="text"] {
+  width: 100%;
+  background: var(--gray-500);
+  color:var(--gray-300);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.createTask input[type="text"]:focus-within{
+  color: var(--gray-100);
+}
+
+.createTask button[type="submit"] {
+  width: auto;
+  padding: 1rem;
+  background-color: var(--blue-dark);
+  border: none;
+  border-radius: 8px;
+  color: var(--gray-100);
+  font-weight: bold;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.createTask button[type="submit"]:hover {
+  background-color: var(--blue);
+}
