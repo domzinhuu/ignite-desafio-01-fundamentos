@@ -7,3 +7,7 @@
     margin: 0 auto;
     margin-top: calc(0px - 1.5rem - 6px);
 }
+
+.taskListContainer{
+    margin-top: 4rem;
+}

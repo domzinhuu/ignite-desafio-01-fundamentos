@@ -1,0 +1,114 @@
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 4.5rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  color: var(--gray-100);
+  padding: 1rem;
+}
+
+.taskItem + .taskItem{
+  margin-top: 0.75rem;
+}
+
+.taskItem:last-child{
+  margin-bottom: 0.75rem;
+}
+
+.taskItemSelection {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.taskItemSelection p {
+  line-height: 1.225;
+  font-size: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.completedItem {
+    color:var(--gray-300);
+    text-decoration: line-through;
+  }
+
+.checkboxContainer {
+  display: block;
+  position: relative;
+  margin-right: 1.2rem;
+  align-self: center;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.checkMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 100%;
+
+  cursor: pointer;
+}
+
+.checkboxContainer input[type="checkbox"]:checked + .checkMark {
+  background-color: var(--purple-dark);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.checkboxContainer input[type="checkbox"]:not(:checked) + .checkMark:hover {
+  background-color: var(--blue-dark-low-opacity);
+  border: 1px solid var(--blue-dark);
+}
+
+.checkboxContainer input[type="checkbox"]:checked + .checkMark::before {
+  position: absolute;
+  content: "\2713";
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.checkboxContainer input[type="checkbox"]:checked + .checkMark:hover {
+  background-color: var(--purple);
+  border: none;
+}
+
+.deleteButton {
+  background-color: transparent;
+  padding: 0.5rem;
+  border: none;
+  line-height: 0;
+  color: var(--gray-100);
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px;
+  align-self: center;
+}
+
+.deleteButton:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}

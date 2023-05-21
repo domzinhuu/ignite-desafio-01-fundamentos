@@ -1,5 +1,6 @@
 :root {
   --blue-dark: #1e6f9f;
+  --blue-dark-low-opacity: rgba(30, 111, 159, .2);
   --blue: #4ea8de;
   --purple-dark: #5e60ce;
   --purple: #8284fa;
@@ -21,7 +22,7 @@
   box-sizing: border-box;
 }
 
-:focus{
+:focus {
   outline: transparent;
   box-shadow: 0 0 0 2px var(--purple-dark);
   transition: all 0.2s;

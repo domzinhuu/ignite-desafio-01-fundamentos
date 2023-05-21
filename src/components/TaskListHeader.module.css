@@ -1,0 +1,22 @@
+.taskListHeader {
+  display: flex;
+  padding-bottom: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskListHeader strong > span {
+  margin-left: 0.5rem;
+  background-color: var(--gray-400);
+  color: var(--gray-100);
+  padding: 0.15rem 0.5rem;
+  border-radius: 8px;
+}
+
+.taskListHeader strong:first-child {
+  color: var(--blue);
+}
+
+.taskListHeader strong:nth-child(2) {
+  color: var(--purple);
+}
